@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html class="cat-anon" lang="ru">
+	<head>
+		<title>Marina 4EVER</title>
+		<style>
+			html, body {
+				height: 100%;
+				width: 100%;
+				min-height: 100%;
+				font-size: 16px;
+				color: #4e4e3f;
+				background-color: #ececec;
+			}
+			body {
+				font-weight: 400;
+				font-family: "Open Sans",sans-serif;
+				line-height: 125%;
+			}
+			html {
+				-ms-overflow-style: scrollbar;
+				overflow-x: hidden;
+			}
+			.nav-text {
+				margin-left: 15px;
+			}
+			.gxs-resource-image {
+				margin: auto;
+			}
+			.clmwrap {
+				display: table;
+				table-layout: fixed;
+				min-width: 100%;
+				height: 100%;
+			}
+			.signindialog {
+				width: 640px;
+				min-height: 40px;
+				padding: 0;
+				position: fixed !important;
+				background-color: #ebebec;
+			}
+			.dialog {
+				position: absolute;
+				z-index: 510;
+			}
+			.signindialog-overlay {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				background-color: #000;
+				opacity: 0.5;
+				z-index: 100;
+			}
+			.hideme {
+				display: none;
+			}
+			.BAjpF {
+				z-index: 1500;
+				font-family: Arial,sans-serif;
+			}
+			.krAzww {
+				right: 20px;
+				position: fixed;
+				bottom: 20px;
+			}
+			ul, ol {
+				padding: 0;
+				margin: 0 0 10px 24px;
+			}
+			.lcIHwA {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			li {
+				line-height: 1.25em;
+			}
+			.kjFgiM {
+				-webkit-animation: gLWDmf 0.5s;
+				animation: gLWDmf 0.5s;
+				margin-bottom: 8px;
+				padding: initial !important;
+				background: initial !important;
+			}
+			:last-child.kjFgiM {
+				margin-bottom: 0px;
+			}
+			.dxLIez {
+				position: relative;
+			}
+			.dTUstK {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-align-items: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				vertical-align: middle;
+				width: 48px;
+				height: 48px;
+				border-radius: 50%;
+				border: none;
+				box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+				-webkit-transition: background-color,box-shadow;
+				transition: background-color,box-shadow;
+				-webkit-transition-duration: 0.25s;
+				transition-duration: 0.25s;
+				background-color: #e8424f;
+				box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+				box-sizing: border-box;
+				cursor: pointer;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				padding: 0;
+				border: none;
+				position: relative;
+				outline: none;
+			}
+			.dVjOed {
+				background-image: url("https://secure.usedesk.ru//upload/chat_images/157072/157072_10166.png");
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				margin: auto;
+				position: absolute;
+				top: -1px;
+				bottom: 0px;
+				left: -1px;
+				right: 0px;
+				pointer-events: none;
+				width: 50px;
+				height: 50px;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				border-radius: 40px;
+			}
+			.ajax-loading {
+				position: relative;
+			}
+			a.wait::after, button.wait::after, span.wait, .ajax-loading::before, .preloader {
+				background: url("/6/Content/Img/loader.small.gif") center center no-repeat;
+				background: linear-gradient(transparent,transparent),url("/6/Content/Img/spinner.svg") center center no-repeat;
+				-moz-animation: rotate360 1.5s linear infinite;
+				-o-animation: rotate360 1.5s linear infinite;
+				-webkit-animation: rotate360 1.5s linear infinite;
+				animation: rotate360 1.5s linear infinite;
+				background-size: 20px 20px;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				vertical-align: text-top;
+				margin-left: 10px;
+				z-index: 2;
+				content: "";
+			}
+			#loginDialogPlaceHolder {
+				height: 260px;
+				margin-top: 10%;
+			}
+			.mobile-menu-header {
+				display: none;
+			}
+			.sidebar {
+				vertical-align: top;
+				display: table-cell;
+				background-color: #fbfbfb;
+				box-shadow: 1px 0px rgba(0,0,0,0.07), 3px 0px rgba(0,0,0,0.07);
+				position: relative;
+				width: 252px;
+				min-width: 252px;
+				z-index: 99;
+			}
+			.main-content {
+				vertical-align: top;
+				display: table-cell;
+				position: relative;
+				height: 100%;
+				padding: 0;
+			}
+			.main-content .flex {
+				display: flex;
+				flex-direction: column;
+				min-height: 100%;
+			}
+			.showmobile {
+				display: none;
+			}
+			.sc-wrap {
+				overflow: hidden;
+				z-index: 0;
+			}
+			.main-content .flex-item {
+				flex: 1 1 auto;
+			}
+			.footer {
+				margin-top: 3em;
+			}
+			.footer .copyright {
+				font-size: 75%;
+				text-align: center;
+			}
+			.tframe, .tframeblock-footer {
+				width: 100%;
+				padding: 20px;
+				max-width: 1030px;
+				min-width: 788px;
+				margin: 0 auto;
+			}
+			/* @media screen and (max-width:1057px) */
+			.tframe, .tframeblock-footer {
+				padding: 20px 3px;
+			}
+			/* @media screen and (max-width:1057px) */
+			.tframe, .tframeblock, .tframeblock-footer {
+				min-width: 754px;
+			}
+			a, a:visited, a:hover, a:focus {
+				color: #00aeef;
+			}
+			.footer .copyright .cpr-link {
+				color: #4e4e3f;
+				text-decoration: underline;
+				margin-left: 1em;
+				display: inline-block;
+			}
+			.container-fluid {
+				padding: 0 15px;
+			}
+			.main-content .wrap {
+				position: relative;
+			}
+			.container-fluid .sc-wrap {
+				margin: 0 -4px;
+			}
+			.page-header {
+				border: none;
+				margin-bottom: 2em;
+				margin-top: 0px;
+				padding: 0;
+				vertical-align: middle;
+			}
+			.block {
+				margin: 0 auto;
+				margin-bottom: 2em;
+				border: .0625rem solid #ccc;
+				background-color: #fff;
+			}
+			.no-bmarg {
+				margin-bottom: 0px !important;
+			}
+			.nav-table {
+				font-size: 1em;
+				line-height: 125%;
+			}
+			.top-buffer-30px {
+				margin-top: 32px;
+				margin-top: 2rem;
+			}
+			.slider {
+				font-size: 16px;
+				position: fixed;
+				line-height: 125%;
+				right: 0px;
+				top: 50%;
+				z-index: 1;
+				width: 34px;
+				height: 44px;
+				opacity: 0.8;
+				box-shadow: 1px 1px 1px 1px gray;
+				border-radius: 4px 0 0 4px;
+			}
+			.feedBack {
+				margin-top: -75px;
+			}
+			.slider .left-edge {
+				position: absolute;
+				cursor: pointer;
+				z-index: 1;
+				color: #fff;
+				font-size: 16px;
+				padding-left: 10px;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				width: 34px;
+				background-color: #00aeef;
+				border-radius: 4px 0 0 4px;
+			}
+			.slider .contents {
+				position: relative;
+				background-color: #fff;
+				margin-left: 34px;
+				height: 44px;
+			}
+			.feedBack .slider-image {
+				position: absolute;
+				left: 30px;
+				top: -85px;
+				display: inline-block;
+				width: 118px;
+				height: 116px;
+				background: url(/6/Content/img/avatars/feedback-YaKlass.png);
+			}
+			.slider .slider-links {
+				text-align: center;
+				color: #999;
+				padding: 2em .5em 1em;
+				width: 172px;
+			}
+			.top-buffer-10px {
+				margin-top: 10px;
+				margin-top: 0.62rem;
+			}
+			a.dot {
+				text-decoration: underline;
+			}
+			.slider .left-edge i {
+				position: absolute;
+				top: 50%;
+				margin-top: -6px;
+			}
+			hr {
+				border-top: 1px solid #ccc;
+			}
+			.btn {
+				background: #00aeef;
+				color: #fff;
+				border-radius: 10px;
+				-webkit-text-shadow: none;
+				text-shadow: none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				border: none;
+				min-width: 124px;
+				font-family: inherit;
+				line-height: 28px;
+				white-space: normal;
+			}
+			a.btn {
+				color: #fff;
+			}
+			.btn.oneliner {
+				white-space: nowrap;
+			}
+			.btn.light {
+				background-color: transparent;
+				color: #00aeef;
+				box-shadow: inset 0px 0px 0px 0.12rem #00aeef;
+			}
+			.nav-table .nav-cell {
+				text-align: center;
+				padding-top: 1em;
+				min-width: 80px;
+			}
+			.nav-table .nav-cell a {
+				display: block;
+			}
+			.nav-table .nav-button {
+				width: 40px;
+				height: 40px;
+				margin-bottom: 0.3rem;
+				display: inline-block;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			.nav-table .nav-button.nav-right {
+				background-image: url("/6/Content/Img/vs/navigation/navigation-right.svg");
+			}
+			.nav-table .nav-button + span {
+				display: block;
+			}
+			.nav-table .nav-button.nav-top {
+				background-image: url("/6/Content/Img/vs/navigation/navigation-top.svg");
+			}
+			.nav-table .nav-button.nav-left {
+				background-image: url("/6/Content/Img/vs/navigation/navigation-left.svg");
+			}
+			.block-header, .block > .header {
+				min-height: 2em;
+				line-height: 2.5em;
+				padding: .3em 1.5em;
+				background-color: #76a900;
+				color: #fff;
+			}
+			.block .header {
+				overflow: auto;
+			}
+			.blockbody {
+				background-color: #fff;
+			}
+			.blockbody, .blockbody-pad, .blockbody-padding {
+				padding: 1.5rem;
+			}
+			.taskhtmlwrapper {
+				position: relative;
+			}
+			#taskhtml {
+				background: #fff;
+				color: #4e4e3f;
+				line-height: initial;
+				position: relative;
+			}
+			.taskhtmlwrapper img {
+				max-width: 100%;
+				height: auto;
+			}
+			.gxst-definition > div, .gxst-important > .gxst-ibody, .gxst-theory > div {
+				margin: 25px 0;
+				padding: 20px 25px;
+				border: #76a900 solid 1px;
+			}
+			.gxst-theory > div {
+				padding: 20px 25px;
+				background: #f3f3f3;
+			}
+			.MathJax_Preview {
+				color: #888;
+			}
+			.MathJax {
+				display: inline;
+				font-style: normal;
+				font-weight: normal;
+				line-height: normal;
+				font-size: 100%;
+				font-size-adjust: none;
+				text-indent: 0px;
+				text-align: left;
+				text-transform: none;
+				letter-spacing: normal;
+				word-spacing: normal;
+				word-wrap: normal;
+				white-space: nowrap;
+				float: none;
+				direction: ltr;
+				max-width: none;
+				max-height: none;
+				min-width: 0px;
+				min-height: 0px;
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+			.MathJax * {
+				transition: none;
+				-webkit-transition: none;
+				-moz-transition: none;
+				-ms-transition: none;
+				-o-transition: none;
+			}
+			.MathJax img, .MathJax nobr, .MathJax a {
+				border: 0;
+				padding: 0;
+				margin: 0;
+				max-width: none;
+				max-height: none;
+				min-width: 0px;
+				min-height: 0px;
+				vertical-align: 0px;
+				line-height: normal;
+				text-decoration: none;
+			}
+			.MathJax nobr {
+				white-space: nowrap !important;
+			}
+			.MathJax span {
+				display: inline;
+				position: static;
+				border: 0;
+				padding: 0;
+				margin: 0;
+				vertical-align: 0px;
+				line-height: normal;
+				text-decoration: none;
+				box-sizing: content-box;
+			}
+			.MathJax .math {
+				color: #76a900;
+			}
+			.gxst-emph {
+				font-weight: bold;
+				color: #76a900;
+			}
+			h3 {
+				font-size: 1.5rem;
+			}
+			h1 {
+				font-size: 2.25rem;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: lighter;
+			}
+			.block-header h1, .block-header h2, .block-header h3, .block > .header h1, .block > .header h2, .block > .header h3 {
+				font-size: 170%;
+				line-height: 1.47em;
+				margin: 0;
+				color: #fff;
+				overflow: hidden;
+				white-space: nowrap;
+				-ms-text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				text-overflow: ellipsis;
+			}
+			.vs-header .share42init {
+				float: right;
+				margin-top: 0px;
+				margin-left: 1em;
+			}
+			.crc-progress {
+				position: relative;
+				height: 168px;
+				width: 168px;
+				display: inline-block;
+			}
+			.vs-header .crc-progress {
+				margin-right: 1.25em;
+				float: left;
+				height: 88px;
+				width: 88px;
+			}
+			.vs-header .crc-progress.no-progress {
+				width: 66px;
+				height: 66px;
+				margin-bottom: 0.5em;
+			}
+			.breadcrumb {
+				border-radius: 0;
+				padding: 0 0 8px;
+				background-color: inherit;
+				margin: 0;
+			}
+			.vs-header .go-back {
+				display: none;
+			}
+			.page-header h1 {
+				margin-top: 10px;
+			}
+			.page-header.with-crumbs h1 {
+				margin: 0;
+			}
+			.vs-header h1.left-clm {
+				display: inline-block;
+				font-size: 1.87em;
+			}
+			.breadcrumb > li {
+				text-shadow: none;
+				display: inline;
+			}
+			.crc-progress > .icon {
+				width: 130px;
+				height: 130px;
+				background-position: -1px -1px;
+				background-repeat: no-repeat;
+			}
+			.crc-progress .icon {
+				position: absolute;
+				left: 19px;
+				top: 19px;
+			}
+			.vs-header .crc-progress > .icon {
+				width: 66px;
+				height: 66px;
+				background-position: -66px 0;
+				background-size: 132px 66px;
+				left: 11px;
+				top: 11px;
+			}
+			.vs-header .crc-progress.no-progress .icon {
+				left: 0px;
+				top: 0px;
+			}
+			#share42 .share42-item {
+				display: inline-block;
+				margin: 0 0 0 6px;
+				height: 24px;
+			}
+			#share42 :first-child.share42-item {
+				margin: 0;
+			}
+			#share42 .share42-item a {
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				margin: 0;
+				padding: 0;
+				outline: none;
+				background: url(/6/Content/Img/share42/share42_sprite.png) 0 0 no-repeat;
+			}
+			#share42 .share42-item a.share42-vk {
+				background-position: 0 -888px;
+			}
+			#share42 .share42-item a.share42-twitter {
+				background-position: 0 -740px;
+			}
+			#share42 .share42-item a.share42-ok {
+				background-position: 0 -592px;
+			}
+			#share42 .share42-item a.share42-mailru {
+				background-position: 0 -444px;
+			}
+			#share42 .share42-item a.share42-fb {
+				background-position: 0 -148px;
+			}
+			.svg-sprite-site-menu {
+				background-repeat: no-repeat;
+				background-size: contain;
+				display: inline-block;
+			}
+			.svg-sprite-site-menu.icon-burger {
+				background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2221%22%20height%3D%2221%22%20viewBox%3D%220%200%2021%2021%22%3E%3Cg%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20opacity%3D%22.33%22%20d%3D%22M0%200h21v21H0z%22%2F%3E%3Crect%20y%3D%223%22%20width%3D%2221%22%20height%3D%223%22%20rx%3D%22.5%22%20ry%3D%22.5%22%20fill%3D%22%23fff%22%2F%3E%3Crect%20y%3D%229%22%20width%3D%2221%22%20height%3D%223%22%20rx%3D%22.5%22%20ry%3D%22.5%22%20fill%3D%22%23fff%22%2F%3E%3Crect%20y%3D%2215%22%20width%3D%2221%22%20height%3D%223%22%20rx%3D%22.5%22%20ry%3D%22.5%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+			}
+			.svg-sprite-site-menu.icon-lock {
+				background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212.104%22%20height%3D%2218%22%20viewBox%3D%220%200%2012.104%2018%22%3E%3Cg%3E%3Cg%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M6.052%205.895a5.98%205.98%200%200%200-2.628.626V4.368a2.628%202.628%200%201%201%205.256%200%20.87.87%200%200%200%201.74%200%204.367%204.367%200%201%200-8.736%200V7.78a6.037%206.037%200%201%200%204.368-1.885zm0%2010.366a4.313%204.313%200%201%201%204.313-4.313%204.317%204.317%200%200%201-4.313%204.313z%22%2F%3E%3Cpath%20d%3D%22M6.052%209.826a1.153%201.153%200%200%200-.63%202.12v1.478a.645.645%200%200%200%201.291%200v-1.499a1.153%201.153%200%200%200-.66-2.1z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+			}
+			.sidebar .wrap {
+				width: 252px;
+				position: fixed;
+				top: 0px;
+				padding: 0;
+			}
+			.menu-header {
+				background-color: #05a087;
+			}
+			.menu-block .menu-list {
+				margin: 1rem 0 1rem;
+			}
+			.menu-block .menu-list .link-item {
+				margin: 0;
+				padding: 0;
+				text-align: left;
+				display: block;
+			}
+			.menu-block .menu-list .link-item.separator {
+				margin-bottom: 20px;
+			}
+			.menu-block .menu-list .link-item a {
+				font-size: 100%;
+				text-align: left;
+				color: #4e4e3f;
+				display: block;
+				white-space: nowrap;
+				padding: 7px 1rem;
+				min-height: 30px;
+				position: relative;
+			}
+			.menu-block .menu-list .link-item a img, .menu-block .menu-list .link-item a i {
+				display: block;
+				width: 24px;
+				height: 24px;
+				position: absolute;
+				top: 7px;
+			}
+			.menu-block .menu-list .link-item a span {
+				display: inline-block;
+				vertical-align: middle;
+				white-space: normal;
+				padding-left: 34px;
+			}
+			.menu-header .logo {
+				height: 100px;
+				background-color: rgba(0, 0, 0, 0.15);
+				overflow: hidden;
+			}
+			.menu-header .loginblock {
+				padding: 2rem 1rem .5rem;
+				text-align: center;
+				background: #fbfbfb;
+			}
+			.btn.big-login-button {
+				border-radius: .45rem;
+				background-color: #009469;
+				box-shadow: 0px 3px #317a58;
+				text-shadow: none;
+				border: none;
+				font-size: 16px;
+				color: #fff;
+				padding: .5rem 1.25rem;
+			}
+			.menu-header .loginblock .big-login-button {
+				margin: 0 auto;
+			}
+			.menu-header .loginblock a.nauth-link {
+				font-size: 1rem;
+				margin-top: 1rem;
+				display: block;
+			}
+			.btn.big-login-button > i {
+				display: inline-block;
+				position: relative;
+				top: 2px;
+				width: 12px;
+				height: 18px;
+				margin-right: 0.5rem;
+			}
+			.menu-header .logo a {
+				display: block;
+			}
+			.menu-header .logo a:hover, .menu-header .logo a:active, .menu-header .logo a:focus {
+				background-color: rgba(0, 0, 0, 0.15);
+			}
+			.menu-header .logo img {
+				width: 100%;
+				height: 100%;
+			}
+			.svg-sprite-site-menu.icon-burger-open {
+				background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2221%22%20height%3D%2221%22%20viewBox%3D%220%200%2021%2021%22%3E%3Cg%3E%3Cg%3E%3Cpath%20fill%3D%22none%22%20opacity%3D%22.33%22%20d%3D%22M0%200h21v21H0z%22%2F%3E%3Cpath%20d%3D%22M20.854%2010.25l-7.786-7.785a.5.5%200%200%200-.707%200l-1.415%201.414a.5.5%200%200%200%200%20.707L15.154%209H.5a.5.5%200%200%200-.5.5v2a.5.5%200%200%200%20.5.5h14.862l-4.35%204.556a.5.5%200%200%200%200%20.707l1.415%201.414a.5.5%200%200%200%20.707%200l7.72-7.72a.5.5%200%200%200%200-.707z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+			}
+		</style>
+	</head>
+
+	<body>
+		<a name="_top"></a>
+		<div class="clmwrap">
+
+			<!-- side bar -->
+			<div class="sidebar" style="height: 736px;">
+				<div class="wrap" style="position: sticky;">
+					<div class="menu-content">
+						<div class="menu-content-wrap">
+							<div class="menu-header sideBarLogoBg">
+								<div class="loginblock showdesktop">
+									<h1>Навигация</h1>
+								</div>
+							</div>
+							<div class="line"><hr /></div>
+							<div class="menu-block">
+
+								<nav class="menu clearfix">
+									<div class="menu-list clearfix">
+
+										<div class="link-item tablet-left-col separator">
+											<a href="#_theory">
+												<img width="24" height="24" src="images/calc.png"><span class="gxst-emph">Теория</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/u.png"><span>тема раз</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/omega.png"><span>тема два</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/alpha.png"><span>тема три</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/pi.png"><span>тема 4етыре</span>
+											</a>
+										</div>
+										
+										<div class="line"><hr /></div>
+
+										<div class="link-item tablet-left-col separator">
+											<a href="#_practice">
+												<img width="24" height="24" src="images/stats.png"><span class="gxst-emph">Практика</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/diag1.png"><span>тема раз</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/max.png"><span>тема два</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/middle.png"><span>тема три</span>
+											</a>
+											<a href="http://404.jodi.org" class="nav-text">
+												<img width="24" height="24" src="images/min.png"><span>тема 4етыре</span>
+											</a>
+										</div>
+
+									</div>
+								</nav>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- main content -->
+			<div class="main-content">
+				<div class="flex">
+					<div class="flex-item">
+						<div class="tframe">
+							<div class="container-fluid wrap">
+
+								<!-- title of main content -->
+								<div class="page-header clearfix with-crumbs vs-header ExerciseRunExercise">
+									<br />
+									<div class="title-box">
+										<center>
+											<h1 class="left-clm long">
+												<span id="itemtitle" itemprop="name">Ашхабад рулит!!</span>
+											</h1>
+										</center>
+									</div>
+								</div>
+
+								<!-- theory -->
+								<a name="_theory"></a>
+								<div class="block sm-easy-header no-bmarg">
+									<div class="header clearfix">
+										<center><h3 class="pull-left">Теория</h3></center>
+									</div>
+									<div class="blockbody">
+										<div tabindex="0" class="taskhtmlwrapper ready" id="taskhtml">
+											<div>
+												<div>Признаки, которые мы рассматривали в первой части теории, и свойства, которые будем рассматривать в этой части, доказываем разными способами. </div>
+												<div>&nbsp;</div>
+												<div>
+													<div>
+														<div>
+															<div>
+																<div>
+																	<div><span class="gxst-emph">Признак </span>— это некоторый факт, благодаря которому мы устанавливаем справедливость интересующего нас суждения о некотором объекте.</div>
+																</div>
+																<div class="gxst-theory">
+																	<div>Если при пересечении двух прямых третьей секущей накрест лежащие углы равны, то эти две прямые параллельны.</div>
+																</div>
+															</div>
+															<div>
+																<div>
+																	<div><span class="gxst-emph">Свойство</span> — если мы уверены в справедливости суждения, мы формулируем&nbsp;свойство объекта.</div>
+																</div>
+																<div class="gxst-theory">
+																	<div>Если&nbsp;две прямые параллельны, то при пересечении их с третьей секущей накрест лежащие углы равны.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div>
+															<div><span class="gxst-emph">Аксиома</span>, в свою очередь —&nbsp;такая истина, которую не надо доказывать. В каждой науке есть свои аксиомы, на справедливости которых&nbsp;строят все дальнейшие суждения и их доказательства.</div>
+														</div>
+														<div class="gxst-theory">
+															<div>
+																<div><strong>Аксиома параллельных прямых.</strong></div>
+																<div>В одной плоскости с заданной прямой через точку, не лежащую на этой прямой, можно провести только одну прямую, параллельную заданной прямой.</div>
+															</div>
+														</div>
+														Иногда эту аксиому называют как одно из свойств параллельных прямых, но на справедливости этой аксиомы строятся многие доказательства в геометрии.
+													</div>
+												</div>
+												<div>
+													<center><img width="351" height="523" class="gxs-resource-image" alt="Paral_taisne_caur_p.png" src="images/picture.jpg"></center>
+												</div>
+												<div>
+													<div class="gxst-theory">
+														<div>
+															<div>Другие свойства параллельных прямых.</div>
+															<div>1. Если одна из пары параллельных прямых параллельна третьей прямой, то и другая прямая параллельна третьей прямой.</div>
+															<div>2. Если некая прямая пересекает одну из двух параллельных прямых, то она пересекает и вторую параллельную прямую. </div>
+														</div>
+													</div>
+												</div>
+												<div>Эти свойства в отличие от аксиомы нужно доказать.</div>
+												<div>&nbsp;</div>
+												<div><strong>Докажем 1. Свойство.&nbsp;&nbsp;</strong></div>
+												<div>
+													Даны две параллельные прямые <span class="gxst-emph">a</span> и <span class="gxst-emph">b</span>. Верно ли, что если прямая <span class="gxst-emph">c</span> параллельна прямой <span class="gxst-emph">a</span>, то она параллельна и прямой <span class="gxst-emph">b</span>?
+												</div>
+												<div>
+													<center><img width="362" height="423" class="gxs-resource-image" alt="Tris_paral_taisnes.png" src="images/picture.jpg"></center>
+												</div>
+												<div>Используем противоположное суждение.</div>
+												<div>&nbsp;</div>
+												<div>
+													Допустим, что возможна ситуация, когда прямая <span class="gxst-emph">c</span> параллельна одной из параллельных прямых — прямой <span class="gxst-emph">a</span> —&nbsp;пересекает другую прямую&nbsp;<span class="gxst-emph">b</span> в некоторой точке <span class="gxst-emph">K</span>. 
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													<center><img width="368" height="426" class="gxs-resource-image" alt="Tris_paral_taisnes1.png" src="images/picture.jpg"></center>
+												</div>
+												<div>
+													Получается противоречие с аксиомой параллельных прямых. Мы имеем ситуацию, когда через точку проходят две пересекающиеся прямые, которые параллельны одной и той же прямой <span class="gxst-emph">a</span>. Такого не может быть, значит, прямые&nbsp;<span class="gxst-emph">b</span> и <span class="gxst-emph">c</span> пересекаться не могут. 
+												</div>
+												<div>
+													Мы доказали, что верно: если одна из пары параллельных прямых параллельна третьей прямой, то и другая прямая параллельна третьей прямой.
+												</div>
+												<div>
+													<br>
+													<strong>Попробуй доказать самостоятельно 2. Свойство. </strong>
+												</div>
+												<div>
+													Если некая прямая <span class="gxst-emph">c</span> пересекает одну из двух параллельных прямых <span class="gxst-emph">a</span>, то она пересекает и вторую параллельную прямую <span class="gxst-emph">b</span>.
+												</div>
+												<div>
+													<center><img width="370" height="420" class="gxs-resource-image" alt="Tris_paral_taisnes_krusto.png" src="images/picture.jpg"></center>
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													Таким же методом от противоположного суждения попробуй представить, что возможна ситуация, когда прямая пересекает одну из параллельных прямых, но не пересекает другую. 
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													<center><img width="370" height="420" class="gxs-resource-image" alt="Tris_paral_taisnes_krusto1.png" src="images/picture.jpg"></center>
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													Свойства углов, которые образуются при пересечении двух параллельных прямых с третьей секущей, мы уже назвали в первой части теории.
+												</div>
+												<div>
+													<div class="gxst-theory">
+														<div>
+															<div>
+																При пересечении двух параллельных прямых третьей секущей: 
+															</div>
+															<div>
+																<div>- накрест лежащие углы равны,</div>
+																<div>- соответственные углы равны,</div>
+																<div>- сумма односторонних углов равна<span class="gxst-emph">180°</span>.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<center><img width="392" height="392" class="gxs-resource-image" alt="Lenku_veidi_paral1.png" src="images/picture.jpg"></center>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<br />
+								<div class="line"><hr /></div>
+								<br />
+
+								<!-- practice -->
+								<a name="_practice"></a>
+								<div class="block sm-easy-header no-bmarg">
+									<div class="header clearfix">
+										<center><h3 class="pull-left">Практика</h3></center>
+									</div>
+									<div class="blockbody">
+										<div tabindex="0" class="taskhtmlwrapper ready" id="taskhtml">
+											<div>
+												<div>Признаки, которые мы рассматривали в первой части теории, и свойства, которые будем рассматривать в этой части, доказываем разными способами. </div>
+												<div>&nbsp;</div>
+												<div>
+													<div>
+														<div>
+															<div>
+																<div>
+																	<div><span class="gxst-emph">Признак </span>— это некоторый факт, благодаря которому мы устанавливаем справедливость интересующего нас суждения о некотором объекте.</div>
+																</div>
+																<div class="gxst-theory">
+																	<div>Если при пересечении двух прямых третьей секущей накрест лежащие углы равны, то эти две прямые параллельны.</div>
+																</div>
+															</div>
+															<div>
+																<div>
+																	<div><span class="gxst-emph">Свойство</span> — если мы уверены в справедливости суждения, мы формулируем&nbsp;свойство объекта.</div>
+																</div>
+																<div class="gxst-theory">
+																	<div>Если&nbsp;две прямые параллельны, то при пересечении их с третьей секущей накрест лежащие углы равны.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div>
+															<div><span class="gxst-emph">Аксиома</span>, в свою очередь —&nbsp;такая истина, которую не надо доказывать. В каждой науке есть свои аксиомы, на справедливости которых&nbsp;строят все дальнейшие суждения и их доказательства.</div>
+														</div>
+														<div class="gxst-theory">
+															<div>
+																<div><strong>Аксиома параллельных прямых.</strong></div>
+																<div>В одной плоскости с заданной прямой через точку, не лежащую на этой прямой, можно провести только одну прямую, параллельную заданной прямой.</div>
+															</div>
+														</div>
+														Иногда эту аксиому называют как одно из свойств параллельных прямых, но на справедливости этой аксиомы строятся многие доказательства в геометрии.
+													</div>
+												</div>
+												<div>
+													<center><img width="351" height="523" class="gxs-resource-image" alt="Paral_taisne_caur_p.png" src="images/picture.jpg"></center>
+												</div>
+												<div>
+													<div class="gxst-theory">
+														<div>
+															<div>Другие свойства параллельных прямых.</div>
+															<div>1. Если одна из пары параллельных прямых параллельна третьей прямой, то и другая прямая параллельна третьей прямой.</div>
+															<div>2. Если некая прямая пересекает одну из двух параллельных прямых, то она пересекает и вторую параллельную прямую. </div>
+														</div>
+													</div>
+												</div>
+												<div>Эти свойства в отличие от аксиомы нужно доказать.</div>
+												<div>&nbsp;</div>
+												<div><strong>Докажем 1. Свойство.&nbsp;&nbsp;</strong></div>
+												<div>
+													Даны две параллельные прямые <span class="gxst-emph">a</span> и <span class="gxst-emph">b</span>. Верно ли, что если прямая <span class="gxst-emph">c</span> параллельна прямой <span class="gxst-emph">a</span>, то она параллельна и прямой <span class="gxst-emph">b</span>?
+												</div>
+												<div>
+													<center><img width="362" height="423" class="gxs-resource-image" alt="Tris_paral_taisnes.png" src="images/picture.jpg"></center>
+												</div>
+												<div>Используем противоположное суждение.</div>
+												<div>&nbsp;</div>
+												<div>
+													Допустим, что возможна ситуация, когда прямая <span class="gxst-emph">c</span> параллельна одной из параллельных прямых — прямой <span class="gxst-emph">a</span> —&nbsp;пересекает другую прямую&nbsp;<span class="gxst-emph">b</span> в некоторой точке <span class="gxst-emph">K</span>. 
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													<center><img width="368" height="426" class="gxs-resource-image" alt="Tris_paral_taisnes1.png" src="images/picture.jpg"></center>
+												</div>
+												<div>
+													Получается противоречие с аксиомой параллельных прямых. Мы имеем ситуацию, когда через точку проходят две пересекающиеся прямые, которые параллельны одной и той же прямой <span class="gxst-emph">a</span>. Такого не может быть, значит, прямые&nbsp;<span class="gxst-emph">b</span> и <span class="gxst-emph">c</span> пересекаться не могут. 
+												</div>
+												<div>
+													Мы доказали, что верно: если одна из пары параллельных прямых параллельна третьей прямой, то и другая прямая параллельна третьей прямой.
+												</div>
+												<div>
+													<br>
+													<strong>Попробуй доказать самостоятельно 2. Свойство. </strong>
+												</div>
+												<div>
+													Если некая прямая <span class="gxst-emph">c</span> пересекает одну из двух параллельных прямых <span class="gxst-emph">a</span>, то она пересекает и вторую параллельную прямую <span class="gxst-emph">b</span>.
+												</div>
+												<div>
+													<center><img width="370" height="420" class="gxs-resource-image" alt="Tris_paral_taisnes_krusto.png" src="images/picture.jpg"></center>
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													Таким же методом от противоположного суждения попробуй представить, что возможна ситуация, когда прямая пересекает одну из параллельных прямых, но не пересекает другую. 
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													<center><img width="370" height="420" class="gxs-resource-image" alt="Tris_paral_taisnes_krusto1.png" src="images/picture.jpg"></center>
+												</div>
+												<div>&nbsp;</div>
+												<div>
+													Свойства углов, которые образуются при пересечении двух параллельных прямых с третьей секущей, мы уже назвали в первой части теории.
+												</div>
+												<div>
+													<div class="gxst-theory">
+														<div>
+															<div>
+																При пересечении двух параллельных прямых третьей секущей: 
+															</div>
+															<div>
+																<div>- накрест лежащие углы равны,</div>
+																<div>- соответственные углы равны,</div>
+																<div>- сумма односторонних углов равна<span class="gxst-emph">180°</span>.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<center><img width="392" height="392" class="gxs-resource-image" alt="Lenku_veidi_paral1.png" src="images/picture.jpg"></center>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- footer -->
+						<div class="footer">
+							<div class="line"><hr /></div>
+							<div class="copyright">
+								<div class="tframeblock-footer">
+									<a class="cn-nav-left-Theory" href="#_top">
+										<span><h2>Наверх</h2></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>	
+	</body>
+</html>

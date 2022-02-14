@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/site.min.css">
+		<link rel="stylesheet" href="css/best.css">
+    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<title>super web design</title>
+		<script type="text/javascript" src="js/site.min.js"></script>
+	</head>
+
+	<body class="body-page">
+		<a name="top"></a>
+		<div class="sidebar" id="sidebar">
+			<a href="index.html">
+				<div>
+					<center><h3>Все темы</h3></center>
+				</div>
+			</a>
+			<hr class="dashed" />
+			<div class="list-group">
+				<a href="#theory" class="list-group-item">
+                	<h4 class="list-group-item-heading" style="color: #76a900;">Big Text OMAGAD</h4>
+                	<p>text text text text text texts</p>
+            	</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/pi.png">&nbsp;&nbsp;KRUSTY KRAB</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/alpha.png">&nbsp;&nbsp;KRUSTY KRAB</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/u.png">&nbsp;&nbsp;KRUSTY KRAB</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/omega.png">&nbsp;&nbsp;KRUSTY KRAB</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/abciss.png">&nbsp;&nbsp;KRUSTY KRAB</a>
+			</div>
+			<div class="list-group">
+				<a href="#practice" class="list-group-item">
+                	<h4 class="list-group-item-heading" style="color: #76a900;">Big Text AGAIN</h4>
+                	<p>text text text text text texts</p>
+            	</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/diag1.png">&nbsp;&nbsp;SPONGEBOB SQUAREPANTS</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/diag2.png">&nbsp;&nbsp;SPONGEBOB SQUAREPANTS</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/max.png">&nbsp;&nbsp;SPONGEBOB SQUAREPANTS</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/middle.png">&nbsp;&nbsp;SPONGEBOB SQUAREPANTS</a>
+            	<a href="#" class="list-group-item"><img width="30" height="30" src="images/min.png">&nbsp;&nbsp;SPONGEBOB SQUAREPANTS</a>
+			</div>
+		</div>
+
+		<a name="theory"></a>
+		<div class="content-page">
+			<div class="main">
+				<div class="panel panel-success">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Теория</h1></center>
+            		</div>
+            		<div class="panel-body">
+            			<strong>STRONG</strong> <small>small</small> <p>in p</p><br>aesrjt<br>awgehs<br>awegrhdtfybrg<center>centererrrrrrrrrrrrrr</center><br><br>image:<img src="images/uzbek.jpg"><br><hr>
+            			<center>
+	            			<h1>imma h1</h1>
+	            			<h2>imma h2</h2>
+	            			<h3>imma h3</h3>
+	            			<h4>imma h4</h4>
+	            			<h5>imma h5</h5>
+	            			<h6>imma h6</h6>
+	            			<br>Now hr dashed:<hr class="dashed"><br>
+	            			<p>imma p</p>
+	            			<p class="img-comment">imma p img-comment</p>
+	            			<p class="lead">imma p lead</p>
+            			</center>
+            			<blockquote>
+                			<p>imma p in quote</p>
+                			<small>imma small in quote</small>
+                		</blockquote>
+            		</div>
+            	</div>
+
+            	<hr class="dashed"><br>
+
+            	<a name="practice"></a>
+            	<div class="panel panel-primary">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Практика</h1></center>
+            		</div>
+            		<div class="panel-body">
+            			<strong>STRONG</strong> <small>small</small> <p>in p</p><br>aesrjt<br>awgehs<br>awegrhdtfybrg<center>centererrrrrrrrrrrrrr</center><br><br>image:<img src="images/picture.jpg"><br><hr>
+            			<center>
+	            			<h1>imma h1</h1>
+	            			<h2>imma h2</h2>
+	            			<h3>imma h3</h3>
+	            			<h4>imma h4</h4>
+	            			<h5>imma h5</h5>
+	            			<h6>imma h6</h6>
+	            			<br>Now hr dashed:<hr class="dashed"><br>
+	            			<p>imma p</p>
+	            			<p class="img-comment">imma p img-comment</p>
+	            			<p class="lead">imma p lead</p>
+            			</center>
+            			<blockquote>
+                			<p>imma p in quote</p>
+                			<small>imma small in quote</small>
+                		</blockquote>
+            		</div>
+            	</div>
+
+			</div>
+		</div>
+
+		<script>
+			//var scrollPos = $(this).scrollTop();
+			var sidebar = document.getElementById("sidebar");
+			var sb_h = 800;
+			var wnd_h = document.documentElement.clientHeight;
+			window.onscroll = function() { myFunction() };
+			var last = window.pageYOffset;
+			var offset = 0;
+			var speed = 10;
+
+			function myFunction() {
+				var st = $(this).scrollTop();
+				var ls = window.pageYOffset;
+				var sb_pos = window.getComputedStyle(sidebar).top;
+				sb_pos = parseInt(sb_pos, 10);
+				//var bottomSize = (window.pageYOffset + wnd_h) - (sb_pos + sb_h);
+				var bottomSize = wnd_h - (sb_h + offset);
+				var topSize =  offset + 30;
+				//if (st > scrollPos){
+				if(ls > last) {
+					// down
+					//alert('(' + window.pageYOffset + ' + ' + wnd_h + ') - (' + sb_pos + ' + ' + sb_h + ') = ' + bottomSize);
+					if(bottomSize >= 30) {
+						fakepos = window.pageYOffset + wnd_h - sb_h - 30;
+						sidebar.style.position = "fixed";
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						//sidebar.style.backgroundColor = 'red';
+
+					} else {
+						sidebar.style.position = "fixed";
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset - speed;
+					}
+				} else {
+					// up
+					if(topSize >= 30) {
+						//alert(topSize);
+						sidebar.style.position = "fixed";
+						//sidebar.style.backgroundColor = 'green';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+
+					} else {
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30 - (last - ls)) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset + speed;
+					}
+				}
+				scrollPos = st;
+				last = ls;
+			}
+		</script>
+	</body>
+</html>

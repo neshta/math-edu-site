@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/site.min.css">
+		<link rel="stylesheet" href="css/best.css">
+            <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<title>ОГЭ - Геометрия</title>
+		<script type="text/javascript" src="js/site.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                  $(document).ready(function(){
+                        $("#p1").click(function(){
+                              $("#a1").slideToggle();
+                        });
+                        $("#p2").click(function(){
+                              $("#a2").slideToggle();
+                        });
+                        $("#p3").click(function(){
+                              $("#a3").slideToggle();
+                        });
+                        $("#p4").click(function(){
+                              $("#a4").slideToggle();
+                        });
+                        $("#p5").click(function(){
+                              $("#a5").slideToggle();
+                        });
+                        $("#p6").click(function(){
+                              $("#a6").slideToggle();
+                        });
+                        $("#p7").click(function(){
+                              $("#a7").slideToggle();
+                        });
+                        $("#p8").click(function(){
+                              $("#a8").slideToggle();
+                        });
+                        $("#p9").click(function(){
+                              $("#a9").slideToggle();
+                        });
+                        $("#p10").click(function(){
+                              $("#a10").slideToggle();
+                        });
+                  });
+            </script>
+	</head>
+
+	<body class="body-page">
+		<a name="top"></a>
+		<div class="sidebar" id="sidebar">
+			<a href="index.html">
+				<div>
+					<center><h3>Все темы</h3></center>
+				</div>
+			</a>
+			<hr class="dashed" />
+			<div class="list-group">
+				<a href="#theory" class="list-group-item">
+                	<h4 class="list-group-item-heading" style="color: #76a900;">ТЕОРИЯ</h4>
+            	</a>
+            	<a href="#theme1" class="list-group-item"><img width="30" height="30" src="images/pi.png">&nbsp;&nbsp;Четырехугольники</a>
+            	<a href="#theme2" class="list-group-item"><img width="30" height="30" src="images/alpha.png">&nbsp;&nbsp;Параллелограмм</a>
+            	<a href="#theme3" class="list-group-item"><img width="30" height="30" src="images/u.png">&nbsp;&nbsp;Ромб</a>
+            	<a href="#theme4" class="list-group-item"><img width="30" height="30" src="images/omega.png">&nbsp;&nbsp;Трапеция</a>
+            	<a href="#theme5" class="list-group-item"><img width="30" height="30" src="images/abciss.png">&nbsp;&nbsp;Правильные многоугольники</a>
+			</div>
+			<div class="list-group" style="margin-bottom: 0px;">
+                        <a href="#practice" class="list-group-item">
+                  <h4 class="list-group-item-heading" style="color: #76a900; margin-top: 8px; margin-left: 10px;">ПРАКТИКА</h4>
+                  </a>
+                  </div>
+		</div>
+
+		<a name="theory"></a>
+		<div class="content-page">
+			<div class="main">
+				<div class="panel panel-success">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Теория</h1></center>
+            		</div>
+            		<div class="panel-body azaza">
+            			<a name="theme1"></a>
+            			<h3>Четырехугольники</h3>
+            			<img src="images/quadrangles/1.png" class="img-small img-center">
+            			<ul>
+            				<li><strong>Четырехугольник</strong> – это фигура, которая состоит из четырёх точек (вершин) и четырёх отрезков (сторон), которые последовательно соединяют вершины.</li>
+            				<li>Четырёхугольник называется выпуклым, если он расположен в одной полуплоскости относительно прямой, которая содержит любую из его сторон.</li>
+            				<li>Сумма углов выпуклого четырёхугольника равна 360°:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠A+∠B+∠C+∠D=360°.</li>
+            				<li>Сумма внутренних углов четырехугольника pавна 360°:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠A+∠B+∠C+∠D=360°.</li>
+            				<li>Не существует четырёхугольников, у которых все углы острые или все углы тупые.</li>
+            				<li>Каждый угол четырёхугольника всегда меньше суммы трёх остальных углов:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠A   <  ∠B+∠C+∠D,   ∠B < ∠A+∠C+∠D,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠C   <  ∠A+∠B+∠D,   ∠D < ∠A+∠B+∠D.</li>
+            				<li>Каждая сторона четырёхугольника всегда меньше суммы трёх остальных сторон:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AB< BC+CD+DA,      BC < CD+DA+ AB,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CD < BC+ DA+ AB,   DA < BC+CD+ AB.</li>
+            			</ul>
+            			<br />
+            			<h4 class="zapomni">Вписанная в четырехугольник и описанная около четырехугольника окружность</h4>
+
+            			<div style="text-align: center;">
+            				<div style="display: inline-block !important; width: 49%; max-height: 300px !important; max-height: 200px !important;"><img src="images/quadrangles/2.png" style="max-height: 150px; display: block;"></div>
+            				<div style="display: inline-block; width: 49%;"style="text-align: left;">
+            					<h5 class="zapomni"><strong>Свойства вписанной в четырехугольник окружности:</strong></h5>
+            					<blockquote class="zapomnil">
+            						<ul>
+            							<li>Если четырехугольник описан около окружности, то сумма двух его противолежащих сторон равна сумме двух других его сторон.</li>
+            						</ul>
+            					</blockquote>
+            				</div>
+            			</div>
+            			<br />
+
+            			<div style="text-align: center;">
+            				<div style="display: inline-block !important; width: 49%; max-width: 300px !important; max-height: 200px !important;"><img src="images/quadrangles/3.png" style="max-height: 200px; display: block;"></div>
+            				<div style="display: inline-block; width: 49%;"style="text-align: left;">
+            					<h5 class="zapomni"><strong>Признаки описанной около четырехугольника окружности:</strong></h5>
+            					<blockquote class="zapomnil">
+            						<ul>
+            							<li>Если в четырехугольнике сумма двух его противолежащих сторон равна сумме двух других его сторон, то в четырехугольник можно вписать окружность.</li>
+            						</ul>
+            					</blockquote>
+            				</div>
+            			</div>
+            			<br />
+
+            			<a name="theme2"></a>
+            			<h3>Параллелограмм</h3>
+            			<ul>
+            				<li><strong>Параллелограмм</strong> - это четырехугольник, у которого противоположные стороны попарно параллельны.</li>
+            			</ul>
+            			<img src="images/quadrangles/4.png" class="img-small img-center">
+            			<h5 class="zapomni"><strong>Свойства:</strong></h5>
+            			<ul>
+            				<li>Противоположные стороны параллелограмма равны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AB = CD, BC = AD</li>
+            				<li>Противоположные стороны параллелограмма параллельны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AB || CD, BC || AD</li>
+            				<li>Противоположные углы параллелограмма равны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠ABC = ∠CDA, ∠BCD = ∠DAB</li>
+            				<li>Сумма углов прилегающих к любой стороне равна 180°:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠ABC + ∠BCD = ∠BCD + ∠CDA = ∠CDA + ∠DAB = ∠DAB + ∠DAB = 180°</li>
+            				<li>Каждая диагональ параллелограмма делит его на два равных треугольника.</li>
+            				<li>Две диагонали делят параллелограмм на две пары равных треугольников.</li>
+            				<li>Диагонали параллелограмма точкой пересечения делят друг друга пополам.</li>
+            				<li>Точка пересечения диагоналей называется центром симметрии параллелограмма.</li>
+            				<li>Параллелограмм имеет две диагонали – длинную – AC и короткую – BD.</li>
+            				<li>В параллелограмм можно вписать окружность тогда и только тогда, когда он является ромбом.</li>
+            				<li>Около параллелограмма можно описать окружность тогда и только тогда, когда он является прямоугольником.</li>
+            			</ul>
+            			<br />
+            			<h5 class="zapomni"><strong>Площадь параллелограмма:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li><strong>S = a∙h</strong>, где a – основание, h – высота.</li>
+            				</ul>
+            			</blockquote>
+
+            			<a name="theme3"></a>
+            			<h3>Ромб</h3>
+            			<ul>
+            				<li><strong>Ромб</strong> — это параллелограмм, который имеет равные стороны. Если у ромба все углы прямые, тогда он называется квадратом.</li>
+            			</ul>
+            			<img src="images/quadrangles/5.png" class="img-small img-center">
+            			<h5 class="zapomni"><strong>Свойства:</strong></h5>
+            			<ul>
+            				<li>Имеет все свойства параллелограмма.</li>
+            				<li>Все стороны равны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;АВ = ВС = СD = AD</li>
+            				<li>Диагонали пересекаются под прямым углом:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC ┴ BD</li>
+            				<li>Диагонали являются биссектрисами его углов:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∠BAC = ∠CAD, ∠ABD = ∠DBC, ∠BCA = ∠ACD, ∠ADB = ∠BDC</li>
+            				<li>Все высоты равны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BN = DL = BM = DK</li>
+            				<li>В ромб можно вписать окружность.</li>
+            				<li>Около ромба нельзя описать окружность.</li>
+            			</ul>
+            			<br />
+            			<h5 class="zapomni"><strong>Площадь ромба:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ol>
+            					<li><strong>S = a∙h</strong>, где a – основание, h – высота.</li>
+            					<li><strong>S = <img src="images/quadrangles/form/1_2.png" style="max-height: 40px;">d<sub>1</sub>∙d<sub>2</sub> </strong>, где d<sub>1</sub> и d<sub>2</sub> – диагонали.</li>
+            				</ol>
+            			</blockquote>
+
+            			<a name="theme4"></a>
+            			<h3>Трапеция</h3>
+            			<ul>
+            				<li><strong>Трапеция</strong> — это четырехугольник, у которого две стороны параллельны, а две другие стороны не параллельны или трапецией называется четырехугольник, у которого одна пара противоположных сторон параллельна, и стороны не равны между собой.</li>
+            			</ul>
+            			<img src="images/quadrangles/6.png" class="img-small img-center">
+            			<h5 class="zapomni"><strong>Свойства:</strong></h5>
+            			<ul>
+            				<li>AD и BC – основания, AB, CD – боковые стороны.</li>
+            				<li>AD || BC</li>
+            				<li>Если боковые стороны трапеции равны, то такая трапеция будет называться равнобедренной.</li>
+            				<li>Если у трапеции есть прямые углы при боковой стороне, то такая трапеция называется прямоугольной.</li>
+            				<li>Если в трапецию можно вписать в окружность, то трапеция равнобедренная</li>
+            				<li>В трапецию можно вписать окружность, если AD + BC = AB + CD</li>
+            			</ul>
+            			<br />
+            			<h5 class="zapomni"><strong>Средняя линия трапеции:</strong></h5>
+            			<p>Средняя линия KL – отрезок, соединяющий середины боковых сторон.</p>
+            			<ul>
+            				<li>AD || KL и KL || BC</li>
+            				<li>AK = KB, CL = LD</li>
+            				<li><img src="images/quadrangles/form/1.png" style="max-height: 30px;"></li>
+            			</ul>
+            			<br />
+            			<div style="text-align: center;">
+            				<div style="display: inline-block !important; width: 49%; max-width: 300px !important; max-height: 200px !important;"><img src="images/quadrangles/7.png"></div>
+            				<div style="display: inline-block; width: 49%;">
+            					<h5 class="zapomni"><strong>Площадь трапеции:</strong></h5>
+            					<blockquote class="zapomnil">
+            						<ul>
+            							<li>S = <img src="images/quadrangles/form/2.png" style="max-height: 30px;">∙h = KL∙ h, где h – высота </li>
+            						</ul>
+            					</blockquote>
+            				</div>
+            			</div>
+            			<br />
+
+            			<div style="text-align: center;">
+            				<div style="display: inline-block !important; width: 49%; max-width: 300px !important; max-height: 200px !important;"><img src="images/quadrangles/8.png"></div>
+            				<div style="display: inline-block; width: 49%;">
+            					<h5 class="zapomni"><strong>Свойства диагоналей:</strong></h5>
+            					<blockquote class="zapomnil">
+            						<ul>
+            							<li>ΔOBC и ΔAOD – образованные диагоналями и основаниями подобны (ΔOBC ∼ ΔAOD)</li>
+            							<li>Коэффициент подобия <img src="images/quadrangles/form/3.png" style="max-height: 40px;"></li>
+            						</ul>
+            					</blockquote>
+            				</div>
+            			</div>
+            			<br />
+
+            			<div style="text-align: center;">
+            				<div style="display: inline-block !important; width: 49%; max-width: 300px !important; max-height: 200px !important;"><img src="images/quadrangles/9.png"></div>
+            				<div style="display: inline-block; width: 49%;">
+            					<blockquote class="zapomnil">
+            						<ul>
+            							<li>ΔABO и ΔOCD –образованные диагоналями и боковыми сторонами будут иметь одинаковую площадь (S<sub>ABO</sub> = S<sub>OCD</sub>)</li>
+            						</ul>
+            					</blockquote>
+            				</div>
+            			</div>
+            			<br /><br />
+
+            			<h4 class="zapomni"><strong>Равнобедренная трапеция:</strong></h4>
+            			<img src="images/quadrangles/10.png" class="img-small img-center" style="max-width: 400px !important; margin-left: 0px !important;">
+            			<h5 class="zapomni">Свойства:</h5>
+            			<ul>
+            				<li>Боковые стороны равны: AB = CD</li>
+            				<li>Углы при основании равны: ∠B = ∠C, ∠A = ∠D</li>
+            				<li>Диагонали равны: AC = BD</li>
+            			</ul>
+            			<br />
+
+            			<h4 class="zapomni"><strong>Прямоугольная трапеция:</strong></h4>
+            			<img src="images/quadrangles/11.png" class="img-small img-center" style="max-width: 400px !important; margin-left: 0px !important;">
+            			<h5 class="zapomni">Свойства:</h5>
+            			<ul>
+            				<li>∠A = ∠B = 90°</li>
+            				<li>Высота и боковая сторона трапеции, прилежащая к прямому углу, совпадают.</li>
+            			</ul>
+            			<br />
+
+            			<a name="theme5"></a>
+            			<h3>Правильные многоугольники</h3>
+            			<p>Многоугольником называется часть площади, которая ограничена замкнутой ломаной линией, не пересекающей сама себя.</p>
+            			<img src="images/quadrangles/12.png" class="img-small img-center">
+            			<br />
+            			<ul>
+            				<li><strong>Правильный многоугольник</strong> — это многоугольник, у которого все стороны и углы равны.</li>
+            			</ul>
+            			<div style="text-align: center;">
+            				<div style="display: inline-block; width: 40%;"><img src="images/quadrangles/13.png" class="img-small img-center"></div>
+            				<div style="display: inline-block; width: 40%;"><img src="images/quadrangles/14.png" class="img-small img-center"></div>
+            			</div>
+
+            			<h5 class="zapomni"><strong>Свойства:</strong></h5>
+            			<ol>
+            				<li>Все стороны равны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a1 = a2 = a3 = a4 = ... = a<sub>n</sub></li>
+            				<li>Все углы равны:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;α<sub>1</sub> = α<sub>2</sub> = α<sub>3</sub> = ... = α<sub>n-1</sub> = α<sub>n</sub></li>
+            				<li>Центр вписанной окружности совпадает c центром описанной окружности, образуя центр многоугольника O</li>
+            				<li>Все биссектрисы углов между сторонами равны и проходят через центр правильного многоугольника O</li>
+            				<li>Сумма всех углов n-угольника равна:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180° · (n – 2)</li>
+            				<li>Градусная величина угла n-угольника равна: <img src="images/quadrangles/form/4.png" style="max-height: 40px;"></li>
+            				<li>Около любого правильного n-угольника можно описать окружность</li>
+            				<li>В любой правильный n-угольник можно вписать окружность</li>
+            			</ol>
+            			<br />
+
+            		</div>
+            	</div>
+
+            	<hr class="dashed"><br>
+
+            	<a name="practice"></a>
+            	<div class="panel panel-primary">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Практика</h1></center>
+            		</div>
+            		<div class="panel-body azaza">
+                        <br />
+
+            		<p>1. Периметр параллелограмма равен 48 см. Найдите стороны параллелограмма, если разность двух сторон равна 3 см.</p>
+                        <a id="p1" class="answer">Показать решение</a>
+                        <div id="a1"><img src="images/quadrangles/practice/a_1.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>2. Найдите углы параллелограмма ABCD, если: a) ∠A = 84°; б) ∠CAD=16°, ∠ACD = 37°.</p>
+                        <a id="p2" class="answer">Показать решение</a>
+                        <div id="a2"><img src="images/quadrangles/practice/a_2.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>3. Сторона ромба равна 6 см, а один из углов равен 150°. Найдите площадь ромба.</p>
+                        <a id="p3" class="answer">Показать решение</a>
+                        <div id="a3"><img src="images/quadrangles/practice/a_3.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>4. Острый угол параллелограмма равен 30°, а высоты, проведенные из вершины тупого угла, равны 2 см и 3 см. Найдите площадь параллелограмма.</p>
+                        <a id="p4" class="answer">Показать решение</a>
+                        <div id="a4"><img src="images/quadrangles/practice/a_4.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>5. Один из углов равнобедренной трапеции равен 68°. Найдите остальные углы трапеции.</p>
+                        <a id="p5" class="answer">Показать решение</a>
+                        <div id="a5"><img src="images/quadrangles/practice/a_5.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>6. Найдите площадь прямоугольной трапеции, у которой две меньшие стороны равны 6 см, а больший угол равен 135°.</p>
+                        <a id="p6" class="answer">Показать решение</a>
+                        <div id="a6"><img src="images/quadrangles/practice/a_6.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>7. Сумма трех углов выпуклого четырехугольника равна 300°. Найдите четвертый угол. Ответ дайте в градусах.</p>
+                        <a id="p7" class="answer">Показать решение</a>
+                        <div id="a7"><img src="images/quadrangles/practice/a_7.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>8. ABCDEFGH — правильный восьмиугольник. Найдите угол EFG. Ответ дайте в градусах.</p>
+                        <a id="p8" class="answer">Показать решение</a>
+                        <div id="a8"><img src="images/quadrangles/practice/a_8.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>9. В параллелограмм вписана окружность. Найдите периметр параллелограмма, если одна из его сторон равна 8.</p>
+                        <a id="p9" class="answer">Показать решение</a>
+                        <div id="a9"><img src="images/quadrangles/practice/a_9.png" class="img-big"></div>
+                        <hr /><br />
+
+                        <p>10. Около трапеции описана окружность. Периметр трапеции равен 22, средняя линия равна 5. Найдите боковую сторону трапеции.</p>
+                        <a id="p10" class="answer">Показать решение</a>
+                        <div id="a10"><img src="images/quadrangles/practice/a_10.png" class="img-big"></div>
+                        <hr /><br />
+
+            		</div>
+            	</div>
+
+			</div>
+		</div>
+
+		<script>
+                  $("#a1").slideToggle(10);
+                  $("#a2").slideToggle(10);
+                  $("#a3").slideToggle(10);
+                  $("#a4").slideToggle(10);
+                  $("#a5").slideToggle(10);
+                  $("#a6").slideToggle(10);
+                  $("#a7").slideToggle(10);
+                  $("#a8").slideToggle(10);
+                  $("#a9").slideToggle(10);
+                  $("#a10").slideToggle(10);
+			//var scrollPos = $(this).scrollTop();
+			var sidebar = document.getElementById("sidebar");
+			var sb_h = 800;
+            sb_h = sidebar.offsetHeight;
+			var wnd_h = document.documentElement.clientHeight;
+			window.onscroll = function() { myFunction() };
+			var last = window.pageYOffset;
+			var offset = 0;
+			var speed = 10;
+
+			function myFunction() {
+				var st = $(this).scrollTop();
+				var ls = window.pageYOffset;
+				var sb_pos = window.getComputedStyle(sidebar).top;
+				sb_pos = parseInt(sb_pos, 10);
+				//var bottomSize = (window.pageYOffset + wnd_h) - (sb_pos + sb_h);
+				var bottomSize = wnd_h - (sb_h + offset);
+				var topSize =  offset + 30;
+				//if (st > scrollPos){
+				if(ls > last) {
+					// down
+					//alert('(' + window.pageYOffset + ' + ' + wnd_h + ') - (' + sb_pos + ' + ' + sb_h + ') = ' + bottomSize);
+					if(bottomSize >= 30) {
+						fakepos = window.pageYOffset + wnd_h - sb_h - 30;
+						sidebar.style.position = "fixed";
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						//sidebar.style.backgroundColor = 'red';
+
+					} else {
+						sidebar.style.position = "fixed";
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset - speed;
+					}
+				} else {
+					// up
+					if(topSize >= 30) {
+						//alert(topSize);
+						sidebar.style.position = "fixed";
+						//sidebar.style.backgroundColor = 'green';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+
+					} else {
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30 - (last - ls)) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset + speed;
+					}
+				}
+				scrollPos = st;
+				last = ls;
+			}
+		</script>
+	</body>
+</html>

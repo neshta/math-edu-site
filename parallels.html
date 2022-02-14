@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/site.min.css">
+		<link rel="stylesheet" href="css/best.css">
+    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<title>ОГЭ - Геометрия</title>
+		<script type="text/javascript" src="js/site.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                  $(document).ready(function(){
+                        $("#p1").click(function(){
+                              $("#a1").slideToggle();
+                        });
+                        $("#p2").click(function(){
+                              $("#a2").slideToggle();
+                        });
+                        $("#p3").click(function(){
+                              $("#a3").slideToggle();
+                        });
+                  });
+            </script>
+	</head>
+
+	<body class="body-page">
+		<a name="top"></a>
+		<div class="sidebar" id="sidebar">
+			<a href="index.html">
+				<div>
+					<center><h3>Все темы</h3></center>
+				</div>
+			</a>
+			<hr class="dashed" />
+			<div class="list-group">
+				<a href="#theory" class="list-group-item">
+                	<h4 class="list-group-item-heading" style="color: #76a900; margin-top: 8px; margin-left: 10px;">ТЕОРИЯ</h4>
+            	</a>
+            	<a href="#theme1" class="list-group-item"><img width="30" height="30" src="images/pi.png">&nbsp;&nbsp;Параллельные прямые</a>
+            	<a href="#theme2" class="list-group-item"><img width="30" height="30" src="images/alpha.png">&nbsp;&nbsp;Свойства параллельных прямых</a>
+            	<a href="#theme3" class="list-group-item"><img width="30" height="30" src="images/u.png">&nbsp;&nbsp;Признаки параллельных прямых</a>
+			</div>
+			<div class="list-group" style="margin-bottom: 0px;">
+				<a href="#practice" class="list-group-item">
+                	<h4 class="list-group-item-heading" style="color: #76a900; margin-top: 8px; margin-left: 10px;">ПРАКТИКА</h4>
+            	</a>
+			</div>
+		</div>
+
+		<a name="theory"></a>
+		<div class="content-page">
+			<div class="main">
+				<div class="panel panel-success">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Теория</h1></center>
+            		</div>
+
+            		<div class="panel-body azaza">
+            			<a name="theme1"></a>
+            			<h3>Параллельные прямые</h3>
+            			<ul>
+            				<li><strong>Параллельные прямые</strong> — это прямые, которые лежат в одной плоскости и не пересекаются, сколько бы их не продолжали: <i>a</i> || <i>b</i>.</li>
+            				<li><strong>Секущая</strong> — это прямая, пересекающая две параллельные прямые: <i>c</i></li>
+            			</ul>
+            			<h4>Аксиома параллельных прямых:</h4>
+            			<p>Через любую точку плоскости, расположенную вне данной прямой, можно провести <strong>единственную</strong> прямую, параллельную данной.</p>
+            			<p>Рассмотрим ситуацию, когда две параллельные прямые пересечены секущей. В результате мы видим, что образовались 8 углов.</p>
+            			<img src="images/parallels/1.jpg" class="img-small img-center">
+            			<p>Чтобы правильно использовать эти углы, нужно во-первых знать, как они называются, во-вторых, нужно знать какими свойствами они обладают.</p>
+            			<h4>Накрест лежащие:</h4>
+            			<p>Название говорит само за себя: ∠3 и ∠6, так же, как и ∠4 и ∠5 лежат «накрест», то есть по разные стороны от секущей и «внутри», между прямыми a и b.</p>
+            			<img src="images/parallels/2.png" class="img-big">
+            			<h4>Односторонние углы:</h4>
+            			<p>Все просто: если углы односторонние, значит, они лежат по одну сторону относительно секущей. Существуют <strong>внутренние</strong> и <strong>внешние</strong> односторонние углы.</p>
+            			<p>Внутренние односторонние углы лежат «внутри», между прямыми <i>a</i> и <i>b</i>: <strong>∠3</strong> и <strong>∠5</strong>, <strong>∠4</strong> и <strong>∠6</strong>.</p>
+            			<p>Внешние односторонние углы лежат «снаружи» относительно прямых <i>a</i> и <i>b</i>: <strong>∠1</strong> и <strong>∠7</strong>, <strong>∠2</strong> и <strong>∠8</strong>.</p>
+            			<img src="images/parallels/3.png" class="img-big">
+            			<h4>Соответственные углы:</h4>
+            			<p>Обратим внимание, что ∠1 и ∠5, ∠3 и ∠7,  ∠2 и ∠6,  ∠4 и ∠8  лежат в одинаковых «соответственных» местах. Либо оба угла лежат выше параллельных прямых и лежат по левую сторону от секущей, либо оба угла лежат ниже параллельных прямых и лежат по правую сторону от секущей и так далее.</p>
+            			<img src="images/parallels/4.png" class="img-big">
+            			<br />
+            			<p>Теперь перейдем к главному, как использовать то, что мы узнали?</p>
+            			<blockquote class="zapomnil">
+            				<ol>
+            					<li>Если в задаче даны или оказались параллельными две прямые, то как это использовать?</li>
+            					<li>Как узнать, что прямые параллельны?</li>
+            				</ol>
+            			</blockquote>
+            			<p>Ответ на <i>первый вопрос</i> называется «<strong>свойства параллельных прямых</strong>», а ответ на <i>второй вопрос</i> называется «<strong>признаки параллельных прямых</strong>».</p>
+            			<a name="theme2"></a>
+            			<h3>Свойства параллельных прямых</h3>
+            			<h5 class="zapomni"><strong>Если a || b, то:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ol>
+            					<li>Накрест лежащие углы равны.</li>
+            					<li>Соответственные углы равны.</li>
+            					<li>Сумма любых двух односторонних углов равна 180°.</li>
+            				</ol>
+            			</blockquote>
+            			<br />
+            			<a name="theme3"></a>
+            			<h3>Признаки параллельных прямых</h3>
+            			<h5 class="zapomni"><strong>Если:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>Любые два накрест лежащих угла равны<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ИЛИ</li>
+            					<li>Любые два соответственных угла равны<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ИЛИ</li>
+            					<li>Сумма любых двух односторонних углов равна 180°,</li>
+            				</ul>
+            			</blockquote>
+            			<h5 class="zapomni"><strong>то прямые a и b – параллельны (a || b).</strong></h5>
+            			<br />
+            			<p>! Обрати вниманиe, чтобы доказать параллельность прямых, достаточно выяснить, равенство всего двух углов (накрест лежащих или соответственных) или доказать, что сумма двух любых односторонних равна 180°, а уже все остальное становится доказанным.</p>
+            		</div>
+            	</div>
+
+            	<hr class="dashed"><br>
+
+            	<a name="practice"></a>
+            	<div class="panel panel-primary">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Практика</h1></center>
+            		</div>
+            		<div class="panel-body azaza">
+            			<br />
+
+                              <p>1.	Прямые m и n параллельны. Найдите ∠3, если ∠1 = 22°, ∠2 = 72°. Ответ дайте в градусах.</p>
+                              <img src="images/parallels/practice/p1.png" class="img-center">
+                              <br />
+                              <a id="p1" class="answer">Показать решение</a>
+                              <div id="a1"><img src="images/parallels/practice/a1.png" class="img-big"></div>
+                              <hr /><br />
+
+                              <p>2.	Прямые m и n параллельны. Найдите ∠3, если ∠1 = 133°, ∠2 = 43°. Ответ дайте в градусах.</p>
+                              <img src="images/parallels/practice/p2.png" class="img-center">
+                              <br />
+                              <a id="p2" class="answer">Показать решение</a>
+                              <div id="a2"><img src="images/parallels/practice/a2.png" class="img-big"></div>
+                              <hr /><br />
+
+                              <p>3.	Прямые m и n параллельны. Найдите ∠3, если ∠1 = 54°, ∠2 = 100°. Ответ дайте в градусах.</p>
+                              <img src="images/parallels/practice/p3.png" class="img-center">
+                              <br />
+                              <a id="p3" class="answer">Показать решение</a>
+                              <div id="a3"><img src="images/parallels/practice/a3.png" class="img-big"></div>
+                              <hr /><br />
+            		</div>
+            	</div>
+
+			</div>
+		</div>
+
+		<script>
+			$("#a1").slideToggle(10);
+            $("#a2").slideToggle(10);
+            $("#a3").slideToggle(10);
+			//var scrollPos = $(this).scrollTop();
+			var sidebar = document.getElementById("sidebar");
+			//var sb_h = 800;
+			var sb_h = document.getElementById('sidebar').clientHeight;
+                  sb_h = sidebar.offsetHeight;
+			var wnd_h = document.documentElement.clientHeight;
+			window.onscroll = function() { myFunction() };
+			var last = window.pageYOffset;
+			var offset = 0;
+			var speed = 10;
+
+			function myFunction() {
+				var st = $(this).scrollTop();
+				var ls = window.pageYOffset;
+				var sb_pos = window.getComputedStyle(sidebar).top;
+				sb_pos = parseInt(sb_pos, 10);
+				//var bottomSize = (window.pageYOffset + wnd_h) - (sb_pos + sb_h);
+				var bottomSize = wnd_h - (sb_h + offset);
+				var topSize = offset + 60;
+				//if (st > scrollPos){
+				if(ls > last) {
+					// down
+					//alert('(' + window.pageYOffset + ' + ' + wnd_h + ') - (' + sb_pos + ' + ' + sb_h + ') = ' + bottomSize);
+					if(bottomSize >= 30) {
+						fakepos = window.pageYOffset + wnd_h - sb_h - 30;
+						sidebar.style.position = "fixed";
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						//sidebar.style.backgroundColor = 'red';
+
+					} else {
+						sidebar.style.position = "fixed";
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset - speed;
+					}
+				} else {
+					// up
+					if(topSize >= 30) {
+						//alert(topSize);
+						sidebar.style.position = "fixed";
+						//sidebar.style.backgroundColor = 'green';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+
+					} else {
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30 - (last - ls)) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset + speed;
+					}
+				}
+				scrollPos = st;
+				last = ls;
+			}
+		</script>
+	</body>
+</html>

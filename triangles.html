@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/site.min.css">
+		<link rel="stylesheet" href="css/best.css">
+    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<title>ОГЭ - Геометрия</title>
+		<script type="text/javascript" src="js/site.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                  $(document).ready(function(){
+                        $("#p1").click(function(){
+                              $("#a1").slideToggle();
+                        });
+                        $("#p2").click(function(){
+                              $("#a2").slideToggle();
+                        });
+                        $("#p3").click(function(){
+                              $("#a3").slideToggle();
+                        });
+                        $("#p4").click(function(){
+                              $("#a4").slideToggle();
+                        });
+                  });
+            </script>
+	</head>
+
+	<body class="body-page">
+		<a name="top"></a>
+		<div class="sidebar" id="sidebar">
+			<a href="index.html">
+				<div>
+					<center><h3>Все темы</h3></center>
+				</div>
+			</a>
+			<hr class="dashed" />
+			<div class="list-group">
+				<a href="#theory" class="list-group-item">
+                	<h4 class="list-group-item-heading" style="color: #76a900;">ТЕОРИЯ</h4>
+            	</a>
+            	<a href="#theme1" class="list-group-item"><img width="30" height="30" src="images/pi.png">&nbsp;&nbsp;Треугольник</a>
+            	<a href="#theme2" class="list-group-item"><img width="30" height="30" src="images/alpha.png">&nbsp;&nbsp;Виды треугольников</a>
+            	<a href="#theme3" class="list-group-item"><img width="30" height="30" src="images/u.png">&nbsp;&nbsp;Тригонометрические соотношения</a>
+            	<a href="#theme4" class="list-group-item"><img width="30" height="30" src="images/omega.png">&nbsp;&nbsp;Равенство треугольников</a>
+            	<a href="#theme5" class="list-group-item"><img width="30" height="30" src="images/abciss.png">&nbsp;&nbsp;Подобие треугольников</a>
+			</div>
+			<div class="list-group" style="margin-bottom: 0px;">
+                <a href="#practice" class="list-group-item">
+                    <h4 class="list-group-item-heading" style="color: #76a900; margin-top: 8px; margin-left: 10px;">ПРАКТИКА</h4>
+                </a>
+            </div>
+		</div>
+
+		<a name="theory"></a>
+		<div class="content-page">
+			<div class="main">
+				<div class="panel panel-success">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Теория</h1></center>
+            		</div>
+            		<div class="panel-body azaza">
+            			<a name="theme1"></a>
+            			<h3>Треугольник</h3>
+            			<ul>
+            				<li><strong>Треугольник</strong> — это геометрическая фигура, которая состоит из трёх точек, не лежащих на одной прямой (вершин треугольника) и трёх отрезков с концами в этих точках (сторон треугольника).</li>
+            				<li><strong>Углами (внутренними углами)</strong> треугольника называются три угла, каждый из которых образован тремя лучами, выходящими из вершин треугольника и проходящими через две другие вершины.</li>
+            			</ul>
+            			<p><strong>Внешним углом треугольника</strong> является угол, смежный внутреннему углу треугольника:</p>
+            			<br /><img src="images/triangles/1.png" class="img-small img-center">
+            			<h5 class="zapomni"><strong>Запомни!</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ol>
+            					<li>Сумма углов треугольника равна 180°<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;α + β + γ = 180°</li>
+            					<li>Длина каждой стороны треугольника больше разности и меньше суммы длин двух других сторон:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AB + BC >AC<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC + AB >BC<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC + BC >AB</li>
+            					<li>В треугольнике против большего угла лежит большая сторона, против большей стороны лежит больший угол.</li>
+            				</ol>
+            			</blockquote>
+            			<h5 class="zapomni">Медиана, биссектриса, высота</h5>
+            			<ul>
+            				<li><strong>Медиана треугольника</strong> — отрезок, соединяющий его вершину с серединой противоположной стороны.<br />AM – медиана, BM = MC.</li>
+            				<li><strong>Биссектриса треугольника </strong> — отрезок, соединяющий вершину треугольника с точкой на противоположной стороне и делящий угол треугольника пополам.<br />∠ AHB = ∠ CHB = 90°</li>
+            				<li><strong>Высота треугольника </strong> — это перпендикуляр, опущенный из его вершины на противоположную сторону.<br />∠ ABH = ∠ CBH</li>
+            			</ul>
+            			<br /><img src="images/triangles/2.png" class="img-small img-center">
+            			<br />
+            			<h5 class="zapomni">Средняя линия треугольника</h5>
+            			<img src="images/triangles/3.png" class="img-small img-center">
+            			<ul>
+            				<li><strong>Средняя линия треугольника</strong> — отрезок, соединяющий середины двух сторон треугольника.</li>
+        					<li>Средняя линия <strong>параллельна одной из сторон</strong> треугольника и <strong>равна ее половине.</strong></li>
+        					<li>AK = KB, BL=LC, KL || AB, KL=<img src="images/triangles/form/1_2.png" style="max-height: 40px;">AC </li>
+       					</ul>
+            			
+            			<h5 class="zapomni">Формулы площади треугольника:</h5>
+            			<ul>
+            				<li><strong>S = <img src="images/triangles/form/1_2.png" style="max-height: 40px;">a∙h</strong>, где <strong>a</strong> – сторона, <strong>h</strong> – высота, проведенная к ней.</li>
+            				<li><strong>S = <img src="images/triangles/form/1_2.png" style="max-height: 40px;">a∙b∙sinα</strong>, где <strong>a</strong>, <strong>b</strong> – стороны, а <strong>α</strong> – угол между сторонами a и b.</li>
+            			</ul>
+            			<br />
+
+            			<a name="theme2"></a>
+            			<h3>Виды треугольников</h3>
+            			<h5 class="zapomni">Равнобедренный треугольник</h5>
+            			<img src="images/triangles/4.png" class="img-small img-center">
+            			<ul>
+            				<li><strong>Две стороны равны</strong> — боковые стороны.</li>
+            				<li><strong>Третья сторона</strong> — основание.</li>
+            				<li><strong>Углы при основании</strong> равны.</li>
+            				<li>В равнобедренном треугольнике высота, проведенная к основанию, является <strong>медианой и биссектрисой</strong>.</li>
+            			</ul>
+            			
+            			<br />
+            			<h5 class="zapomni">Равносторонний треугольник</h5>
+            			<img src="images/triangles/5.png" class="img-small img-center">
+            			<ul>
+       			     		<li><strong>Все стороны</strong> равны</li>
+        		    		<li><strong>Все углы</strong> равны по <strong>60°</strong>.</li>
+        		    		<li>Медианы, биссектрисы и высоты <strong>совпадают</strong>.</li>
+        		    		<li>Радиус окружности, вписанной в правильный треугольник со стороной a:<br /><img src="images/triangles/form/1.png" style="max-height: 40px;"></li>
+        		    		<li>Радиус окружности, описанной около правильного треугольника со стороной a:<br /><img src="images/triangles/form/2.png" style="max-height: 40px;"></li>
+        		    	</ul>
+            			<br />
+
+            			<h5 class="zapomni">Прямоугольный треугольник</h5>
+            			<img src="images/triangles/6.png" class="img-small img-center"style="max-height: 400px !important; max-width: 400px !important;">
+            			<ul>
+      			      		<li>Один из углов равен <strong>90°</strong>.</li>
+        		    		<li><strong>Сумма острых углов</strong> равна <strong>90°</strong>.</li>
+        		    		<li>Катет, <strong>противолежащий углу в 30°</strong>, равен <strong>половине гипотенузы</strong>. И обратно, если в треугольнике <strong>катет в два раза меньше гипотенузы</strong>, то напротив него лежит <strong>угол в 30°</strong>.</li>
+        		    		<li>Теорема Пифагора:<br /><strong>с<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup></strong>, с – гипотенуза, a и b – катеты.</li>
+        		    		<li>Площадь: S = <img src="images/triangles/form/1_2.png" style="max-height: 40px;">a∙b, a и b – катеты.<br /><img src="images/intro/1.png" class="img-small"></li>
+        		    		<li>Высота h прямоугольника треугольника, проведенная к гипотенузе, равна:<br /><img src="images/triangles/form/3.png" style="max-height: 30px;">, где a и b – катеты, с – гипотенуза.<br /><img src="images/triangles/7.png" class="img-small"></li>
+        		    		<li>Центр описанной окружности – <strong>середина гипотенузы</strong>.</li>
+        		    		<li>Радиус R описанной окружности есть половина гипотенузы с: <img src="images/triangles/form/4.png" style="max-height: 30px;"><br /><img src="images/triangles/8.png" class="img-small"></li>
+        		    		<li>Медиана, проведенная к гипотенузе, <strong>равняется ее половине</strong>.</li>
+            				<li>Радиус r вписанное окружности равен:<br /><img src="images/triangles/form/5.png" style="max-height: 40px;">, где a и b – катеты, с – гипотенуза.<br /><img src="images/triangles/9.png" class="img-small"></li>
+            			</ul>
+            			<br />
+
+            			<a name="theme3"></a>
+            			<h3>Тригонометрические соотношения</h3>
+            			<br />
+            			<ul>
+            				<li><strong>Синусом угла</strong> в прямоугольном треугольнике называется отношение противолежащего катета к гипотенузе.</li>
+            				<li><strong>Косинусом угла</strong> в прямоугольном треугольнике называется отношение прилежащего катета к гипотенузе.</li>
+            				<li><strong>Тангенсом угла</strong> в прямоугольном треугольнике называется отношение противолежащего катета к прилежащему.</li>
+            				<li><strong>Котангенсом угла</strong> в прямоугольном треугольнике называется отношение прилежащего катета к противолежащего.</li>
+            			</ul>
+            			<img src="images/triangles/10.png" class="img-small img-center">
+            			<p>Кроме того:</p>
+            			<ul>
+            				<li><strong>sin2(x) + cos2(x) = 1</strong></li>
+            				<li><strong>tg(x)ctg(x) = 1</strong></li>
+            			</ul>
+            			<br />
+
+            			<a name="theme4"></a>
+            			<h3>Равенство треугольников</h3>
+            			<br />
+            			<p>Если ΔAВC и ΔDEF можно совместить наложением, то они являются равными. У равных треугольников равны и их соответствующие элементы.</p>
+            			<img src="images/triangles/11.png" class="img-small img-center">
+            			<h5 class="zapomni"><strong>Первый признак равенства треугольников:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>По двум сторонам и углу между ними.</li>
+            				</ul>
+            			</blockquote>
+            			<img src="images/triangles/12.png" class="img-small img-center">
+            			<p>Если AB = A<sub>1</sub>B<sub>1</sub>, BC = B<sub>1</sub>C<sub>1</sub>, ∠ABC = ∠A<sub>1</sub>B<sub>1</sub>C<sub>1</sub>, то ΔABC = ΔA<sub>1</sub>B<sub>1</sub>C<sub>1</sub></p>
+            			<br />
+            			<h5 class="zapomni"><strong>Второй признак равенства треугольников:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>По двум углам и стороне прилежащей к ним.</li>
+            				</ul>
+            			</blockquote>
+            			<img src="images/triangles/13.png" class="img-sub img-center">
+            			<p>Если AB = A<sub>1</sub>B<sub>1</sub>, BAC = B<sub>1</sub>A<sub>1</sub>C<sub>1</sub>, ∠ABC = ∠A<sub>1</sub>B<sub>1</sub>C<sub>1</sub>, то ΔABC = ΔA<sub>1</sub>B<sub>1</sub>C<sub>1</sub></p>
+            			<br />
+            			<h5 class="zapomni"><strong>Третий признак равенства треугольников:</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>По трём сторонам.</li>
+            				</ul>
+            			</blockquote>
+            			<img src="images/triangles/14.png" class="img-small img-center">
+            			<p>Если AB = A<sub>1</sub>B<sub>1</sub>, AC = A<sub>1</sub>C<sub>1</sub>, BC = B<sub>1</sub>C<sub>1</sub>, то ΔABC = ΔA<sub>1</sub>B<sub>1</sub>C<sub>1</sub></p>
+            			<br />
+
+            			<a name="theme5"></a>
+            			<h3>Подобие треугольников</h3>
+            			<ul>
+            				<li><strong>Подобные треугольники</strong> — треугольники, у которых углы соответственно равны, а стороны одного соответственно пропорциональны сторонам другого треугольника.</li>
+            			</ul>
+            			<img src="images/triangles/15.jpg" class="img-small img-center">
+            			<h5 class="zapomni"><strong>Коэффициент подобия:</strong></h5>
+            			<p>Величина, которая равна <strong>отношению сходственных сторон треугольников</strong>, называется коэффициентом подобия. Коэффициент подобия треугольников обозначается буквой k, k > 0. Таким образом, приведённое выше равенство можно записать в виде:</p>
+            			<img src="images/triangles/16.png" class="img-small img-center">
+            			<br />
+            			<h5 class="zapomni"><strong>Первый признак подобия треугольников</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>Если два угла одного треугольника соответственно равны двум углам другого, то такие треугольники подобны.</li>
+            				</ul>
+            			</blockquote>
+            			<img src="images/triangles/17.png" class="img-small img-center">
+            			<p>Если ∠A = ∠A<sub>1</sub> и ∠B = ∠B<sub>1</sub>, то ΔABC ∼ ΔA<sub>1</sub>B<sub>1</sub>C<sub>1</sub>.</p>
+            			<br />
+
+            			<h5 class="zapomni"><strong>Второй признак подобия треугольников</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>Если две стороны одного треугольника пропорциональны двум сторонам другого треугольника и углы, образованные этими сторонами, равны, то такие треугольники подобны.</li>
+            				</ul>
+            			</blockquote>
+            			<img src="images/triangles/18.png" class="img-small img-center">
+            			<p>Если ∠B = ∠B<sub>1</sub>, <img src="images/triangles/form/6.png" style="max-height: 40px;">, то ΔABC ∼ ΔA<sub>1</sub>B<sub>1</sub>C<sub>1</sub>.</p>
+            			<br />
+
+            			<h5 class="zapomni"><strong>Третий признак подобия треугольников</strong></h5>
+            			<blockquote class="zapomnil">
+            				<ul>
+            					<li>Если три стороны одного треугольника пропорциональны трём сторонам другого, то такие треугольники подобны.</li>
+            				</ul>
+            			</blockquote>
+            			<img src="images/triangles/19.png" class="img-small img-center">
+            			<p>Если <img src="images/triangles/form/7.png" style="max-height: 40px;">, то ΔABC ∼ ΔA<sub>1</sub>B<sub>1</sub>C<sub>1</sub>.</p>
+            			<br />
+
+            			<h5 class="zapomni"><strong>Площади подобных треугольников</strong></h5>
+            			<p>Отношение площадей подобных треугольников равно квадрату коэффициента подобия. Отношение длин соответствующих элементов подобных треугольников (в частности, длин биссектрис, медиан, высот и серединных перпендикуляров) равно коэффициенту подобия</p>
+            			<img src="images/triangles/20.jpg" class="img-small img-center" style="max-width: 500px !important;">
+            		</div>
+            	</div>
+
+            	<hr class="dashed"><br>
+
+            	<a name="practice"></a>
+            	<div class="panel panel-primary">
+            		<div class="panel-heading">
+                		<center><h1 class="panel-title" style="font-size: 20px; color: white;">Практика</h1></center>
+            		</div>
+            		<div class="panel-body">
+            			<br />
+
+                              <p>1. Высота равностороннего треугольника равна 13√3 . Найдите сторону этого треугольника.</p>
+                              <a id="p1" class="answer">Показать решение</a>
+                              <div id="a1"><img src="images/triangles/practice/a_1.png" class="img-big"></div>
+                              <hr /><br />
+
+                              <p>2. В треугольнике ABC угол C равен 90°, AC = 10, tgA = 0,5. Найдите BC.</p>
+                              <a id="p2" class="answer">Показать решение</a>
+                              <div id="a2"><img src="images/triangles/practice/a_2.png" class="img-big"></div>
+                              <hr /><br />
+
+                              <p>3. Два катета прямоугольного треугольника равны 7 и 24. Найдите гипотенузу этого треугольника.</p>
+                              <a id="p3" class="answer">Показать решение</a>
+                              <div id="a3"><img src="images/triangles/practice/a_3.png" class="img-big"></div>
+                              <hr /><br />
+
+                              <p>4. У треугольника со сторонами 16 и 2 проведены высоты к этим сторонам. Высота, проведённая к первой стороне, равна 1. Чему равна высота, проведённая ко второй стороне?</p>
+                              <a id="p4" class="answer">Показать решение</a>
+                              <div id="a4"><img src="images/triangles/practice/a_4.png" class="img-big"></div>
+                              <hr /><br />
+            		</div>
+            	</div>
+
+			</div>
+		</div>
+
+		<script>
+            $("#a1").slideToggle(10);
+            $("#a2").slideToggle(10);
+            $("#a3").slideToggle(10);
+            $("#a4").slideToggle(10);
+			//var scrollPos = $(this).scrollTop();
+			var sidebar = document.getElementById("sidebar");
+			var sb_h = 800;
+            sb_h = sidebar.offsetHeight;
+            //alert(sidebar.offsetHeight);
+			var wnd_h = document.documentElement.clientHeight;
+			window.onscroll = function() { myFunction() };
+			var last = window.pageYOffset;
+			var offset = 0;
+			var speed = 10;
+
+			function myFunction() {
+				var st = $(this).scrollTop();
+				var ls = window.pageYOffset;
+				var sb_pos = window.getComputedStyle(sidebar).top;
+				sb_pos = parseInt(sb_pos, 10);
+				//var bottomSize = (window.pageYOffset + wnd_h) - (sb_pos + sb_h);
+				var bottomSize = wnd_h - (sb_h + offset);
+				var topSize =  offset + 30;
+				//if (st > scrollPos){
+				if(ls > last) {
+					// down
+					//alert('(' + window.pageYOffset + ' + ' + wnd_h + ') - (' + sb_pos + ' + ' + sb_h + ') = ' + bottomSize);
+					if(bottomSize >= 30) {
+						fakepos = window.pageYOffset + wnd_h - sb_h - 30;
+						sidebar.style.position = "fixed";
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						//sidebar.style.backgroundColor = 'red';
+
+					} else {
+						sidebar.style.position = "fixed";
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset - speed;
+					}
+				} else {
+					// up
+					if(topSize >= 30) {
+						//alert(topSize);
+						sidebar.style.position = "fixed";
+						//sidebar.style.backgroundColor = 'green';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+
+					} else {
+						//sidebar.style.transform = 'translateY(' + (wnd_h - sb_h - 30 - (last - ls)) + 'px)';
+						sidebar.style.transform = 'translateY(' + offset + 'px)';
+						sidebar.style.backgroundColor = '#fbfbfb';
+						offset = offset + speed;
+					}
+				}
+				scrollPos = st;
+				last = ls;
+			}
+		</script>
+	</body>
+</html>
